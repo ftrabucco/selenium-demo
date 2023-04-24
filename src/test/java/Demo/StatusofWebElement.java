@@ -13,7 +13,6 @@ public class StatusofWebElement {
 
     private WebDriver driver;
 
-
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
@@ -37,7 +36,7 @@ public class StatusofWebElement {
         System.out.println("Display status: "+searchStore.isDisplayed()); // true
         System.out.println("Enabled status: "+ searchStore.isEnabled());
 
-        // isSelected()
+        // isSelected() - radio buttons, check boxes, dropdown
         WebElement male=driver.findElement(By.xpath("//input[@id='gender-male']"));
         WebElement female=driver.findElement(By.xpath("//input[@id='gender-female']"));
 
